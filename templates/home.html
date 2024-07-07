@@ -1,26 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <div style="height:56px;"></div>
   <title>Joy Career</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
->
-  <style>
-    #banner {
-      align-items: center;
-      heigh: 400px;
-      width: 100%;
-      object-fit:cover;
-    }
-    h1 {
-      font-weight:bold;
-    }
-  </style>
+  {% include 'bootstrap.html' %}
 </head>
 <body>
   <div class="container">
-    <h1 class="text-center mt-2 mb-4"">{{company_name}} Careers</h1>
-    <img class="img-fluid" id="banner" src="https://719ec11f-efc4-482b-a857-8be13843d0ff-00-ccxyoyxg3nv1.sisko.replit.dev/static/banner.jpg" height="320">
+    <h1 class="text-center mt-2 mb-4"">Joy Careers</h1>
+    {% include 'nav.html' %}
+    {% include 'banner.html' %}
     <h2  class="text-center">About Joy</h2>
     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ac ornare libero, ac ullamcorper risus. Cras non pellentesque elit. Ut lobortis magna et varius volutpat. Etiam orci elit, pharetra id rutrum non, tempor suscipit diam. Donec lectus ante, pellentesque scelerisque nunc non, tincidunt tempor felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam eget erat molestie lectus ultricies vulputate. Pellentesque vel sem ac mi vehicula dictum non id leo. Sed imperdiet leo in semper finibus. 
     </p>
@@ -34,6 +23,7 @@
     <button class="btn btn-primary btn-lg">Contact Us</button>
       <p class="mt-4">CopyRight 2024 Joy Career</p>
     </div>
+    {% include 'footer.html' %}
 
   </div>
 </body>
